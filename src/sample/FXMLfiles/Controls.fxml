@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+        <!--maxWidth="1500" maxHeight="700"-->
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:id="controlsScreen" fx:controller="sample.ControlsController" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@../controls.css" maxWidth="1500" maxHeight="750">
+
+    <top>
+        <Label fx:id="GameControls" text="Game Controls" BorderPane.alignment="TOP_RIGHT">
+            <BorderPane.margin>
+                <Insets right="170.0" top="5.0" bottom="30"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <HBox fx:id="controlshbox" spacing="200" BorderPane.alignment="CENTER_RIGHT">
+            <BorderPane.margin>
+                <Insets left="650.0" right="35" bottom="120"/>
+            </BorderPane.margin>
+            <VBox spacing="40" BorderPane.alignment="CENTER_RIGHT">
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/D.png"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/A.png"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/W.png"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/Q.jpeg"/>
+                    </image>
+                </ImageView>
+
+                <ImageView  fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/S.png"/>
+                    </image>
+                </ImageView>
+            </VBox>
+
+            <VBox spacing="40" BorderPane.alignment="CENTER_RIGHT">
+                <Label fx:id="forward" text="Forward"/>
+                <Label fx:id="backward" text="Backward"/>
+                <Label fx:id="jump" text="Jump"/>
+                <Label fx:id="punch" text="Punch"/>
+                <Label fx:id="kick" text="Kick"/>
+            </VBox>
+
+            <VBox spacing="40" BorderPane.alignment="CENTER_RIGHT">
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/J.png"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/L.jpeg"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/I.png"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/ctrl.jpg"/>
+                    </image>
+                </ImageView>
+
+                <ImageView  fitHeight="50"  fitWidth="50">
+                    <image>
+                        <Image url="@../Images/Keys/K.png"/>
+                    </image>
+                </ImageView>
+            </VBox>
+        </HBox>
+    </center>
+
+    <bottom>
+        <Button fx:id="back_btn" onAction="#backHome" text="BACK" layoutX="70" layoutY="50">
+            <BorderPane.margin>
+                <Insets bottom="30" left="30"/>
+            </BorderPane.margin>
+        </Button>
+    </bottom>
+</BorderPane>
+
+
+

@@ -1,0 +1,51 @@
+#controlsScreen{
+-fx-background-image : url("Images/tekkenBackground.jpg");
+-fx-background-size : 1500 750;
+-fx-background-position : center center;
+-fx-background-repeat : stretch;
+}
+
+#GameControls{
+-fx-font-weight : bold;
+-fx-text-fill : white;
+-fx-font-size : 60;
+}
+
+#controlshbox{
+-fx-border-width: 5;
+-fx-border-color : white;
+-fx-padding : 10;
+}
+#forward, #backward, #jump, #punch, #kick{
+-fx-text-fill : white;
+-fx-font-weight : bold;
+-fx-font-size:30;
+}
+
+#back_btn{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 10;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #df0000 0%, #980A0A 100%),
+        #df0000,
+        #7A0000,
+        radial-gradient(center 50% 50%, radius 100%, #df0000, #980A0A);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 2em;
+    -fx-text-fill : white;
+    -fx-font-family:'Act Of Rejection';
+}
+#back_btn:hover{
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #F00000 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #F00000, #F00000);
+}
+
+#back_btn:pressed{
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

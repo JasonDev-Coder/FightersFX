@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane fx:controller="sample.MainMenuController"
+			xmlns:fx="http://javafx.com/fxml/1" prefWidth="1500" prefHeight="750">
+	<ImageView fx:id="backgroundImage" layoutX="0" layoutY="0"
+			   fitHeight="750" fitWidth="1500">
+		<Image url="@../Images/mainBackground.gif"/>
+	</ImageView>
+
+	<top>
+		<ImageView BorderPane.alignment="TOP_CENTER" fitHeight="250" fitWidth="600">
+			<BorderPane.margin>
+				<Insets top="30"/>
+			</BorderPane.margin>
+			<image>
+				<Image url="@../Images/tekken.png"/>
+			</image>
+		</ImageView>
+	</top>
+	<center>
+		<VBox alignment="CENTER">
+			<!--<Label fx:id="title_label" text="TEKKEN FX" alignment="CENTER"/>-->
+			<Button fx:id="start_game" prefWidth="200" text="Start" onAction="#startGame">
+				<VBox.margin>
+					<Insets bottom="70.0"/>
+				</VBox.margin>
+			</Button>
+			<Button fx:id="controls" text="Controls" prefWidth="200" onAction="#controls">
+				<VBox.margin>
+					<Insets bottom="70.0"/>
+				</VBox.margin>
+			</Button>
+			<Button fx:id="quit" text="Quit" prefWidth="200" onAction="#quit"/>
+		</VBox>
+	</center>
+</BorderPane>
+

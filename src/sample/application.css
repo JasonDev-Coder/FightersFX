@@ -1,0 +1,88 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@font-face{
+	src: url("fonts/Act_Of_Rejection.ttf");
+}
+/*#start_game,#controls{
+	-fx-font-family:'Act Of Rejection';
+	-fx-background-color: transparent;
+	-fx-text-fill:#FFFF00;
+	-fx-font-size:100;
+}*/
+
+#start_game, #controls, #quit,#restart,#mainmenu{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 10;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #df0000 0%, #980A0A 100%),
+        #df0000,
+        #7A0000,
+        radial-gradient(center 50% 50%, radius 100%, #df0000, #980A0A);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 2.5em;
+    -fx-text-fill : white;
+    -fx-font-family:'Act Of Rejection';
+}
+
+#start_game:hover,#controls:hover, #quit:hover,#restart:hover,#mainmenu:hover{
+  -fx-background-color:
+   linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #F00000 100%),
+   #9d4024,
+   #d86e3a,
+   radial-gradient(center 50% 50%, radius 100%, #F00000, #F00000);
+}
+
+#start_game:pressed,#controls:pressed, #quit:pressed,#restart:pressed,#mainmenu:pressed{
+   -fx-background-color:
+   linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #F00000 100%),
+   #9d4024,
+   #d86e3a,
+   radial-gradient(center 50% 50%, radius 100%, #F00000, #F00000);
+}
+
+
+#game_over_label{
+    -fx-font-family:'Act Of Rejection';
+    -fx-background-color: transparent;
+    -fx-font-size:140 ;
+    -fx-text-fill:red;
+}
+#arenaChosen, #back{
+    -fx-padding: 8 15 15 15;
+        -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+        -fx-background-radius: 10;
+        -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #df0000 0%, #980A0A 100%),
+            #df0000,
+            #7A0000,
+            radial-gradient(center 50% 50%, radius 100%, #df0000, #980A0A);
+        -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+        -fx-font-weight: bold;
+        -fx-font-size: 2em;
+        -fx-text-fill : white;
+        -fx-font-family:'Act Of Rejection';
+}
+#arenaChosen:hover, #back:hover{
+ -fx-background-color:
+ linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #F00000 100%),
+ #9d4024,
+ #d86e3a,
+ radial-gradient(center 50% 50%, radius 100%, #F00000, #F00000);
+}
+
+#arenaChosen:pressed, #back:pressed{
+-fx-padding: 10 15 13 15;
+  -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#selectArenatxt{
+    -fx-font-family:'Act Of Rejection';
+    -fx-background-color: transparent;
+    -fx-text-fill:white;
+    -fx-font-size:70;
+    -fx-font-weight : bold;
+}
+
+
+

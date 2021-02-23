@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ChooseArenaController"
+            prefHeight="750.0" prefWidth="1500.0">
+    <ImageView>
+        <Image url="@../Images/selectFighterBackground.jpg"/>
+    </ImageView>
+
+    <top>
+        <Label BorderPane.alignment="TOP_CENTER" fx:id="selectArenatxt" text="Select an Arena">
+            <BorderPane.margin>
+                <Insets top="40"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <HBox fx:id="imagesBox" spacing="10">
+        </HBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="490">
+            <BorderPane.margin>
+                <Insets bottom="40"/>
+            </BorderPane.margin>
+            <Button BorderPane.alignment="BOTTOM_LEFT" fx:id="back" text="Back" onMouseClicked="#back">
+                <HBox.margin>
+                    <Insets left="30"/>
+                </HBox.margin>
+            </Button>
+            <Button BorderPane.alignment="BOTTOM_CENTER" fx:id="arenaChosen" text="Start Fight" onMouseClicked="#startGame"/>
+        </HBox>
+    </bottom>
+</BorderPane>
+
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.geometry.Insets?>
+<BorderPane fx:id="screen" fx:controller="sample.ChooseCharacterController" xmlns:fx="http://javafx.com/fxml/1" prefWidth="1500" prefHeight="750"
+            stylesheets="@../chooseCharacters.css">
+
+    <top>
+        <Text fx:id="chooseChar" text="CHOOSE YOUR FIGHTER"/>
+        <HBox spacing="5" alignment="TOP_CENTER" >
+            <BorderPane.margin>
+                <Insets top="50.0" />
+            </BorderPane.margin>
+            <Button fx:id="kenPlayer" onAction="#kenPlayer">
+                <graphic>
+                    <ImageView fx:id="fighter01"
+                               fitHeight="110" fitWidth="110">
+                        <image>
+                            <Image url="@../Characters/Ken/KenSelection/KenFace.jpg"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="akumaPlayer" onAction="#akumaPlayer">
+                <graphic>
+                    <ImageView fx:id="fighter02"
+                               fitHeight="110" fitWidth="110">
+                        <image>
+                            <Image url="@../Characters/Akuma/AkumaSelection/AkumaFace.jpg"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="ryuPlayer" onAction="#ryuPlayer">
+                <graphic>
+                    <ImageView fx:id="fighter03"
+                               fitHeight="110" fitWidth="110">
+                        <image>
+                            <Image url="@../Characters/Ryu/RyuSelection/RyuFace.jpeg"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="chunliPlayer" onAction="#chunliPlayer">
+                <graphic>
+                    <ImageView fx:id="fighter04" pickOnBounds="true" preserveRatio="true"
+                               fitHeight="110" fitWidth="110">
+                        <image>
+                            <Image url="@../Characters/ChunLi/ChunliSelection/ChunliFace.jpg"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </top>
+
+    <center>
+        <HBox spacing="40" alignment="CENTER">
+            <ImageView fx:id="FighterP1" pickOnBounds="true" preserveRatio="true"
+                       fitHeight="500" fitWidth="300">
+                <BorderPane.margin>
+                    <Insets bottom="20"/>
+                </BorderPane.margin>
+            </ImageView>
+
+            <ImageView fitHeight="200" fitWidth="200">
+                <image>
+                    <Image url="@../Images/VS.png"/>
+                </image>
+            </ImageView>
+
+            <ImageView fx:id="FighterP2" pickOnBounds="true" preserveRatio="true"
+                       fitHeight="500" fitWidth="300">
+                <BorderPane.margin>
+                    <Insets bottom="20"/>
+                </BorderPane.margin>
+            </ImageView>
+        </HBox>
+    </center>
+
+    <left>
+        <Button fx:id="confirmP1" text="Confirm P1" onAction="#confirmP1">
+            <BorderPane.margin>
+                <Insets left="20.0" top="200.0"/>
+            </BorderPane.margin>
+        </Button>
+    </left>
+
+    <right>
+        <Button fx:id="confirmP2" alignment="BOTTOM_RIGHT" text="Confirm P2" onAction="#confirmP2">
+            <BorderPane.margin>
+                <Insets right="20.0" top="200.0"/>
+            </BorderPane.margin>
+        </Button>
+    </right>
+
+    <bottom>
+        <HBox spacing="260">
+            <BorderPane.margin>
+                <Insets bottom="20"/>
+            </BorderPane.margin>
+            <Button fx:id="back" text="Back" onAction="#back" alignment="BOTTOM_LEFT" BorderPane.alignment="BOTTOM_LEFT">
+                <HBox.margin>
+                    <Insets left="30"/>
+                </HBox.margin>>
+            </Button>
+            <Text fx:id="p1CharName">
+                <HBox.margin>
+                    <Insets top="15"/>
+                </HBox.margin>
+            </Text>
+            <Text />
+            <Text fx:id="p2CharName">
+                <HBox.margin>
+                    <Insets top="15"/>
+                </HBox.margin>
+            </Text>
+        </HBox>
+    </bottom>
+</BorderPane>
+
+
+
+
+

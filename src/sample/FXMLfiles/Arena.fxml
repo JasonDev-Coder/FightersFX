@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.geometry.Insets?>
+<BorderPane fx:controller="sample.ArenaController"
+            xmlns:fx="http://javafx.com/fxml/1" maxWidth="1500" maxHeight="750">
+
+    <ImageView fx:id="arena" fitHeight="750" fitWidth="1500"/>
+    <top>
+        <BorderPane>
+            <Rectangle fx:id="healthP1" fill="mediumblue" BorderPane.alignment="TOP_LEFT"/>
+            <Rectangle fx:id="healthP2" fill="red" BorderPane.alignment="TOP_RIGHT"/>
+        </BorderPane>
+    </top>
+
+    <center>
+
+        <StackPane>
+            <ImageView fx:id="fightImg">
+                <Image url="@../Images/FIGHT.png"/>
+            </ImageView>
+            <Label fx:id="game_over_label" alignment="CENTER"/>
+        </StackPane>
+    </center>
+
+    <Pane>
+        <ImageView fx:id="p1"/>
+        <ImageView fx:id="p2"/>
+    </Pane>
+    <bottom>
+        <HBox alignment="BOTTOM_CENTER" spacing="20">
+            <Button fx:id="mainmenu" prefWidth="200" text="Main Menu" onAction="#mainMenu" />
+            <Button fx:id="restart" text="Restart" prefWidth="200" onAction="#restart"/>
+        </HBox>
+    </bottom>
+</BorderPane>
+
